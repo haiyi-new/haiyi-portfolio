@@ -2,7 +2,7 @@
 <br><br><br>
 <div align='center'>
     <h2>Front Page</h2>
-    <img style='border-radius:5px' src="https://github.com/haiyi-new/Todo-App-Krenovator--Project1-/blob/master/images/login.jpg"></img>
+    <img style='border-radius:5px' src="https://github.com/haiyi-new/haiyi-portfolio/blob/main/images/frontpage.jpg"></img>
 </div>
 <hr>
 
