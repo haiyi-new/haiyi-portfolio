@@ -1,0 +1,290 @@
+
+header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .content > h1 {
+    color: black;
+    font-size: 5rem;
+    
+   }
+
+ .content > h2 {
+    color: black;
+    font-size: 3rem;
+   }
+
+/* ================= Header Icon =================*/
+
+.content_logo  {
+    
+    color: #00FFF6;
+    transition: var(--transition);
+    gap: 2rem;
+    font-size: 3rem;
+    display: flex;
+    
+}
+.content_logo:hover {
+    
+    color: var(--color-white);
+    
+
+}
+
+/* ================= CTA =================*/
+.cta {
+    margin-top: 20rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+
+/* ================= HeaderSocials =================*/
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 7rem;
+    bottom: -3rem;
+    font-size: 3rem;
+}
+
+.header_socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ================= ME =================*/
+
+/* =================SCROLL DOWN =================*/
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/*========================Media Queries (Large Devices)================= */
+@media screen and (min-width: 1900px) {
+    header{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .content {
+        position: absolute;
+        display: flex;
+      }
+
+
+
+      .content > h1 {
+        color: black;
+        font-size: 4rem;
+        margin-top: 2rem;
+       }
+    
+       .content > h2 {
+        color: black;
+        font-size: 3rem;
+       }
+
+    .content_logo  {
+        gap: 0.5rem;
+        font-size: 3rem;
+        margin-bottom: 15rem;
+        
+    }
+
+    .cta {
+        margin-top: 10rem;
+        font-size: 1.5rem;
+    
+    }
+
+    .header_socials {
+        left: 6rem;
+        bottom: 2rem;
+        font-size: 3rem;
+    }
+
+}
+/*========================Media Queries (LaptopDevices)================= */
+
+@media screen and (max-width: 1899px) {
+
+    .content {
+        position: absolute;
+        display: flex;
+      }
+
+      .content > h1 {
+        color: black;
+        font-size: 3rem;
+       }
+    
+       .content > h2 {
+        color: black;
+        font-size: 2rem;
+       }
+
+    .content_logo  {
+        gap: 0.5rem;
+        font-size: 2rem;
+        display: flex;
+        
+    }
+
+    .cta {
+        margin-top: 10rem;
+        display: flex;
+        gap: 1.2rem;
+        justify-content: center;
+        font-size: 1rem;
+    
+    }
+
+    video {
+        width: 115%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .header_socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        position: absolute;
+        left: 3rem;
+        bottom: -3rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    header{
+
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .content {
+        position: absolute;
+        display: flex;
+      }
+
+    .header_socials,.scroll_down{
+        display: none;
+    }
+
+    .content > h1 {
+        color: black;
+        font-size: 2rem;
+       }
+    
+       .content > h2 {
+        color: black;
+        font-size: 1.5rem;
+       }
+
+    .content_logo  {
+
+        font-size: 1.5rem;
+
+        
+    }
+
+    .cta {
+        margin-top: 6rem;
+        font-size: 0.8rem;
+    
+    }
+
+    video {
+        width: 350%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+}
+
+@media screen and (max-width: 900px) {
+    header{
+
+        height: 120%;
+        width: 100%;
+        
+    }
+
+    .content {
+        position: absolute;
+        display: flex;
+      }
+
+    .header_socials,.scroll_down{
+        display: none;
+    }
+
+    .content > h1 {
+        color: black;
+        font-size: 2rem;
+       }
+    
+       .content > h2 {
+        color: black;
+        font-size: 1.5rem;
+       }
+
+    .content_logo  {
+
+        font-size: 1.5rem;
+
+        
+    }
+
+    .cta {
+        margin-top: 6rem;
+        font-size: 0.8rem;
+    
+    }
+
+    video {
+        width: 350%;
+        height: 120%;
+        object-fit: cover;
+      }
+
+}

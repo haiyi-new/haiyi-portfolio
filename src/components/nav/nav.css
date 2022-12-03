@@ -1,0 +1,80 @@
+nav {
+    background: rgba(0, 0, 0 , 0.3);
+    width:max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(1px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background: var(rgb(0, 0, 0, 0.3));
+}
+
+nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+/*========================Media Queries (Laptop Devices)================= */
+
+@media screen and (max-width: 1899px) {
+    nav a {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }   
+    nav {
+        left: 50%;
+        margin-bottom: -1.5rem;
+    } 
+}
+
+
+/*========================Media Queries (Large Devices)================= */
+
+@media screen and (min-width:1900px) {
+    nav{
+        margin-bottom: -1rem;
+    }   
+    nav a {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }  
+}
+
+@media screen and (max-width: 900px) {
+    nav a {
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+    nav {
+        margin-bottom: 4rem;
+        left: 50%;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    nav a {
+        font-size: 0.5rem;
+        padding: 0.3rem;
+    }
+    nav {
+        margin-bottom: 5rem;
+        left: 50%;
+    } 
+}
